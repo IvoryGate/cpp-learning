@@ -22,7 +22,7 @@ namespace bclog
                 static Logger * instance();
                 void open(const string & filename);
                 void close();
-                // void log(Level level, const char * file, int line, const char * format, ...);
+                void log(Level level, const char * file, int line, const char * format, ...);
             private:
                 Logger();
                 ~Logger();
